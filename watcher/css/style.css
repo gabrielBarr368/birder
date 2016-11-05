@@ -1,0 +1,88 @@
+
+				#data{
+					background-color:white;
+					border:4px;
+					border-radius: 1em;
+					box-shadow: black 0.5em 0.5em 0.3em;
+					padding: 20px 20px 20px 20px;
+					width:580px;
+					height:630px;
+					z-index:4;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				#all{
+					background-image:url('background.jpg');
+					padding: 10px 5px 5px 5px;
+				
+					border-radius: 1em;
+					width:640px;
+					height:680px;
+					z-index:3;
+					margin-left: 80px;
+					margin-right: auto;
+				
+				}
+				#menu{
+					
+					width:780px;
+					height:30px;
+					
+
+					margin-top:25px;
+					border-radius: 1em;
+					
+
+
+
+				}
+				body{
+					
+					font-family:arial, sans-serif;
+					font-size:12px;
+					background-color:#E5E8A0;
+					
+
+				}
+				
+				#logo{
+
+					float: left;
+					margin-left: 130px;
+					margin-top:15px;
+
+
+
+				}
+				#content{
+					width:800px;
+					margin-top:10px;
+					z-index:2;
+					margin-left: 350px;
+					margin-right: auto;
+					position:relative;										
+			
+				}
+				#foot{
+					height:74px;
+					background-color:#B4762A;
+					z-index:1;
+					margin-top:-70px;
+					width:100%;
+					margin-bottom:-30px;
+					
+						
+				}
+				#log{
+					height:15px;
+					margin-top:-7px;
+
+
+
+				}
+				#birder{
+					width:200px;
+					height:130px;
+					margin-top:-30px;
+
+				}

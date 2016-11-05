@@ -1,0 +1,62 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/final_drop.html
+Copyright (c) 2005-2008 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+#navbar {
+	width:1500px; 
+	height:32px; 
+	position:relative; 
+	z-index:100;
+	border-right:1px solid #000; 
+	font-family:arial, sans-serif;
+	/*margin-left:auto;
+	margin-right:auto;*/
+}
+
+#navbar ul {padding:0;margin:0;list-style-type:none;}
+
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+#navbar li {float:left;width:255px;position:relative;}
+/* style the links for the top level */
+#navbar a, #navbar a:visited {display:block;font-size:12px;text-decoration:none; 
+			color:#ffc100; height:30px; border:1px solid #000000; 
+			border-width:1px 0 1px 1px; background:#630063; padding-left:10px; 
+			line-height:29px; font-weight:bold;
+			}
+/* style the second level background */
+#navbar ul ul a.drop, #navbar ul ul a.drop:visited {background: no-repeat 130px center;}
+
+/* style the top level hover 
+#navbar a:hover, #navbar ul ul a:hover{color:#000; background:#b7d186;}
+#navbar :hover > a, #navbar ul ul :hover > a {color:#000; background:#b7d186;}*/
+
+/* style the table so that it takes no part in the layout - required for IE to work */
+#navbar table {position:absolute; top:0; left:0; border-collapse:collapse;}
+
+/* style the second level background */
+#navbar ul ul a.drop, #navbar ul ul a.drop:visited {background:no-repeat 130px center;}
+/* style the second level hover */
+#navbar ul ul a.drop:hover{background:no-repeat 130px center;}
+#navbar ul ul :hover > a.drop {background:no-repeat 130px center;}
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+#navbar ul ul {visibility:hidden; position:absolute;height:0;top:31px;left:0; width:149px;border-top:1px solid #000;}
+/* another hack for IE5.5 */
+* html #navbar ul ul {top:30px;t\op:31px;}
+/* style the second level links */
+#navbar ul ul a, #navbar ul ul a:visited {background:#630063; color:#ffc100; height:auto; line-height:1em; padding:5px 10px; width:128px;border-width:0 1px 1px 1px;}
+/* yet another hack for IE5.5 */
+* html #navbar ul ul a, * html #navbar ul ul a:visited {width:150px;w\idth:128px;}
+
+/* style the top level hover */
+#navbar a:hover, #navbar ul ul a:hover{color:#ffc100; background:#630063;}
+#navbar :hover > a, #navbar ul ul :hover > a {color:#ffc100; background:#630063;}
+
+/* make the second level visible when hover on first level list OR link */
+#navbar ul li:hover ul,
+#navbar ul a:hover ul{visibility:visible;}
